@@ -60,10 +60,11 @@ export PATH="/mingw64/share/qt6/bin:$PATH"
 
 这个时候就需要在程序目录下创建配置文件 `qt.conf`，来指定 qml 目录了
 
-`[Paths]`
-`QmlImports=./qml`
-`Plugins=./`
-
+```
+[Paths]
+QmlImports=./qml
+Plugins=./
+```
 
 
 ## 项目的意义
@@ -114,14 +115,17 @@ cd demo
 ## 测试
 
 `Windows 11 23H2 22631.6199`: ✔️PASS
+
 ![23H2](./README/23h2.png)
 
 
 `Windows 10 1607 14393.187`: ❌FAIL 看起来是调用 `SetThreadDescription` 失败了
+
 ![win10](./README/win10.png)
 
 
 `wine 10.0` ✔️PASS（何意味）
+
 ![linux](./README/linux.png)
 
 
