@@ -35,7 +35,9 @@ pacman -S \
 
 ## 坑1
 
-`windeployqt6` 需要使用到 `qmlimportscanner` 等工具来辅助部署依赖，但是这些工具所在的目录：`/mingw64/share/qt6/bin` 默认不在系统环境变量内，因此执行 `windeployqt6` 时会报错：`Process failed to start:`
+`windeployqt6` 需要使用到 `qmlimportscanner` 等工具来辅助部署依赖，但是这些工具所在的目录：`/mingw64/share/qt6/bin` 默认不在环境变量内，因此执行 `windeployqt6` 时会报错：
+
+`Process failed to start:`
 
 对此就需要额外设置环境变量：
 
