@@ -51,7 +51,7 @@ export PATH="/mingw64/share/qt6/bin:$PATH"
 
 将所有的依赖都打包好后，确认 Windows 不会再弹窗提示缺失 DLL 后，双击运行，还是没有任何窗口出现
 
-通过 `dbgview` 获取到 qml debug 打印后，得知是找不到 qml 模块
+通过 [dbgview](https://learn.microsoft.com/zh-cn/sysinternals/downloads/debugview) 获取到 qml debug 打印后，得知是找不到 qml 模块
 
 ```bash
 00000001	0.00000000	[15232] QQmlApplicationEngine failed to load component	
