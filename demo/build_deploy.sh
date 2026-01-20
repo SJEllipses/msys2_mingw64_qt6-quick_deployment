@@ -20,7 +20,7 @@ cd deploy
 cp "../$EXE_NAME" .
 
 export PATH="/mingw64/share/qt6/bin:$PATH"
-windeployqt6 --release --qmldir ../../qml "./$EXE_NAME" && echo "[SUCCESS] windeployqt-qt6 done."
+windeployqt6 --release --qmldir ../../qml "./$EXE_NAME" && echo "[SUCCESS] windeployqt6 done."
 echo
 
 set +e
